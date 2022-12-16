@@ -1,0 +1,66 @@
+/* General Settings */
+body {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styles */
+.container {
+    height: 1000px;
+    width: 1000px;
+
+    background-color: thistle;
+    border: dotted black 1px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* content Styles */
+
+content {
+    background-color: whitesmoke;
+
+    height: 25%;
+    
+
+}
+
+/* Form styles */
+form {
+    height: 45%;
+    border: dashed black 2px;
+
+    width: 100%;
+
+    margin-top: 20px;
+}
+
+/* Table */
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: separate;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* END */
