@@ -22,26 +22,27 @@ let inputFn = document.getElementById('fn');
 let inputSn = document.getElementById('sn');
 let buttonSubmit = document.getElementById('btSub')
 
-buttonSubmit.addEventListener('click',(e)=>{
-	e.preventDefault();
-	
-	fun(url,options);
-
-})
+let valueFn = inputFn.value
+let valueSn = inputSn.value
 
 let fun = (url,options)=>{
 	
 	fetch(url, options)
 		.then(res => res.json())
 		.then(data =>{
-			console.log(data)
-	
-	
+			// console.log(data)
+			
 			fname.innerHTML=`${data.fname}`;
 			sname.innerHTML=`${data.sname}`;
 			percentage.innerHTML=`${data.percentage}%`;
 			result.innerHTML=`${data.result}`;
 		})
 		.catch(err => console.error(err));
+	}
+		
+buttonSubmit.addEventListener('click',(e)=>{
+	e.preventDefault();
+	
+	fun(url,options);
 
-}
+})
