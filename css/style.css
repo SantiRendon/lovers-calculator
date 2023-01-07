@@ -1,4 +1,6 @@
 /* General Settings */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -8,59 +10,51 @@ body {
     align-items: center;
 }
 
-/* Container styles */
-.container {
-    height: 1000px;
-    width: 1000px;
+/* content Styles */
+content {
+    background-color: hotpink;
 
-    background-color: thistle;
-    border: dotted black 1px;
+    height: 1024px;
+    width: 900px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+    margin: 20px;
 }
 
-/* content Styles */
+h1 {
 
-content {
-    background-color: whitesmoke;
+    font-family: 'Jua', sans-serif;
+    font-size: 40px;
 
-    height: 25%;
-    
-
+    display: flex;
+    justify-content: center;
 }
 
 /* Form styles */
 form {
-    height: 45%;
-    border: dashed black 2px;
+    height: 502px;
+    width: 901px;
+    margin-top: 5px;
 
-    width: 100%;
+    /* background-color: blueviolet; */
+    border: solid black 5px;
 
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Table */
+section {
+    height: 502px;
+    width: 901px;
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: separate;
-    width: 100%;
-}
+    /* background-color: blue; */
+    border: solid black 5px;
 
-td,
-th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-
-    text-align: center;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* END */
