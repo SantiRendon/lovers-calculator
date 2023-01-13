@@ -5,8 +5,9 @@ let container = document.getElementById('')
 // variables tabla
 let fname = document.getElementById('fname')
 let sname = document.getElementById('sname')
-let percentage= document.getElementById('%')
-let result= document.getElementById('resu')
+let percentage = document.getElementById('%')
+let message = document.getElementById('msg')
+let meter = document.getElementById('meter')
 
 // varaibles de formulario
 let inputFn = document.getElementById('fn');
@@ -14,7 +15,7 @@ let inputSn = document.getElementById('sn');
 let buttonSubmit = document.getElementById('btSub')
 
 
-buttonSubmit.addEventListener('click',(e)=>{
+buttonSubmit.addEventListener('click', (e) => {
 	e.preventDefault();
 
 	// variables de configuracion
@@ -32,10 +33,12 @@ buttonSubmit.addEventListener('click',(e)=>{
 		.then(data => {
 			// console.log(data)
 
-			fname.innerHTML = `${data.fname}`;
-			sname.innerHTML = `${data.sname}`;
-			percentage.innerHTML = `${data.percentage}%`;
-			result.innerHTML = `${data.result}`;
+			// fname.innerHTML = `${data.fname}`;
+			// sname.innerHTML = `${data.sname}`;
+			// percentage.innerHTML = `${data.percentage}%`;
+			message.innerHTML = `${data.result}`;
+			meter.value = data.percentage
+			
 		})
 		.catch(err => console.error(err));
 
