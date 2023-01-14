@@ -1,6 +1,16 @@
 /* General Settings */
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 
+:root{
+    --radio-control-color:#E98EAD;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -53,14 +63,37 @@ form {
     border-radius: 35px;
 }
 
+.radio-control{
+    font-family: 'Jua', sans-serif;
+    font-size: 24px;
+}
+
 input[type="radio"]{
+    appearance: none;
+    margin: 0;
 
     height: 20px;
     width: 20px;
 
-    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50%;
     
-    background-color: #E98EAD;
+    background-color: #ffffff;
+    transform: translateY(-0.075em)
+}
+
+input[type="radio"]::before{
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 20px 20px var(--form-control-color);
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
 }
 
 /* article styles */
