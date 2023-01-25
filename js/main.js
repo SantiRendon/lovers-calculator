@@ -1,9 +1,11 @@
-import { renderResults } from "./index.js";
+import { showResults, showNames, } from "./index.js";
 
-let buttonSubmit = document.getElementById('btSub')
+let button = document.getElementById('btSub');
 
-buttonSubmit.addEventListener('click', function main(e) {
+button.addEventListener('click', function main(e) {
     e.preventDefault();
     
-    renderResults();
+    showResults();
+    // showImg()
+    showNames();
 });
