@@ -3,7 +3,7 @@
 
 :root{
     --background-main-color:#f9c7d8;
-    --input-checked-color: #f9c7d8;
+    --input-checked-color: #FFC6D3;
     --input-select-color: #eff6f6;
 }
 
@@ -55,7 +55,7 @@ form {
     font-family: 'Jua', sans-serif;
     font-size: 30px;
         
-    background: #FFC6D3;
+    background: var(--input-checked-color);
     border: 10px solid #000000;
     border-radius: 35px;
 }

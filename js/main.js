@@ -4,8 +4,7 @@ let button = document.getElementById('btSub');
 
 button.addEventListener('click', function main(e) {
     e.preventDefault();
-    
-    showResults();
-    // showImg()
-    showNames();
+
+    showNames(showResults());
+    showImg()
 });

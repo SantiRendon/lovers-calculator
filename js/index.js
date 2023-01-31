@@ -11,7 +11,6 @@ const htmlElements = {
 // Funciones 
 export function showResults() {
 	if (htmlElements.inputFn.value === '' || htmlElements.inputSn.value === '') {
-		window.alert('fill in the null fields')
 		return false
 	} else {
 		// Elementos HTML
@@ -48,13 +47,15 @@ export function showImg() {
 
 export function showNames(validateInput) {
 
-	if (validateInput != true) {
+	if (validateInput === true) {
 		let userFn = htmlElements.userFn
 		let inputFn = htmlElements.inputFn
 		let userSn = htmlElements.userSn
 		let inputSn = htmlElements.inputSn
-	
+
 		userFn.innerHTML = `<p class="name1">${inputFn.value}&heartsuit;</p>`
 		userSn.innerHTML = `<p class="name2">${inputSn.value}&#9825</p>`
+	} else {
+		window.alert('refill in the null fields');
 	}
 }
