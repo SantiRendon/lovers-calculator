@@ -350,4 +350,4 @@ MigrationBackup/
 .ionide/
 
 # extras
-enunciados.txt
+.env
