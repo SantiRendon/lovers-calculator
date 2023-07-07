@@ -351,3 +351,4 @@ MigrationBackup/
 
 # extras
 .env
+package-lock.json
