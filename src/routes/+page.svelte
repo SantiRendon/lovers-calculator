@@ -1,2 +1,18 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Inputs from '$lib/Inputs.svelte';
+</script>
+
+<main>
+	<Inputs />
+</main>
+
+<style>
+	/* content Styles */
+	main {
+		display: flex;
+        flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 20px;
+	}
+</style>
